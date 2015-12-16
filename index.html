@@ -28,7 +28,6 @@
 		}
 
 		table {
-			display: block;
 			margin: 0 auto;
 			border: 1px solid #ccc;
 			border-collapse: collapse;
@@ -43,11 +42,16 @@
 		thead {
 			background: #ccc;
 		}
-		tr {
-			max-width: 900px;
-		}
+
 		td, th {
 			padding: 2px;
+		}
+		tr:nth-child(1) {
+			min-width: 100px;
+		}
+		
+		tr:nth-child(2) {
+			min-width: 600px;
 		}
 
 	</style>
